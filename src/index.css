@@ -1,0 +1,532 @@
+:root {
+  --primary-color: #0c0c0c;
+  --background-primary: #000000;
+  --secondary-color: #bcbcbc;
+  --accent-color: #f37421;
+  --background-color: #ffffff;
+
+  --primary-ff: "muli", sans-serif;
+}
+
+.primary-ff {
+  font-family: var(--primary-ff);
+}
+
+.container {
+  --max-width: 1380px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/* CSS RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.mb_nav {
+  display: none;
+}
+
+.navBar {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-family: var(--primary-ff);
+}
+
+.navBar h1 {
+  font-weight: 1000;
+  font-size: 2.656vw;
+  letter-spacing: 0px;
+}
+
+.navBar ul {
+  list-style-type: none;
+}
+
+.navBar li {
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.list-item-logo {
+  margin-right: 35vw;
+}
+
+.list-item {
+  width: inherit;
+  margin-right: 2vw;
+}
+
+.navBar svg {
+  fill: var(--background-color);
+  width: 0.8vw;
+  height: auto;
+  margin-left: 4.2vw;
+  position: absolute;
+  margin-top: -1.3vw;
+}
+
+.nav_wrap ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.offerBar {
+  height: 4.146vw;
+  text-align: center;
+  color: #242424;
+  background-color: #eeeeee;
+}
+
+.offerBar h1 {
+  padding-top: 1vw;
+  font-weight: 100;
+  font-size: 1.667vw;
+}
+
+.banner {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 69% 91%, 0% 75%);
+  background-color: var(--background-primary);
+  width: 100%;
+  height: 25.104vw;
+  color: var(--background-color);
+  position: relative;
+}
+
+.banner_img {
+  height: 43vw;
+  width: auto;
+  margin-top: -23vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.banner img {
+  height: 100%;
+  width: auto;
+  margin-left: -10vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: opacity(50%);
+}
+
+.banner h1 {
+  padding-top: 5vw;
+  font-size: 4.948vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: var(--primary-ff);
+  position: relative;
+  z-index: 1;
+}
+
+.banner h2 {
+  font-size: 2.24vw;
+  color: #c4c4c4;
+  position: relative;
+  z-index: 1;
+}
+
+.para_wrap {
+  padding-bottom: 1.719vw;
+}
+
+.introduction_paragraph {
+  font-size: 1vw;
+}
+
+.specsSection {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(212, 212, 212, 1) 81%
+  );
+  height: 40.865vw;
+}
+
+.row-cont {
+  margin-top: 5vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.row-cont h1 {
+  color: #9b9b9b;
+  margin-right: 1vw;
+  font-size: 1.927vw;
+}
+
+.row-cont h2 {
+  color: #343434;
+  font-size: 1.51vw;
+  text-transform: uppercase;
+}
+
+.specs_image img {
+  margin-top: 3vw;
+  height: 25vw;
+  width: auto;
+}
+
+.grid-title {
+  margin-top: 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bcbcbc;
+  font-size: 1.75vw;
+}
+
+.myGrid {
+  display: grid;
+  grid-auto-flow: column;
+  margin-inline: auto;
+  justify-items: center;
+  gap: 18vw;
+}
+
+.orange_underline {
+  background-color: var(--accent-color);
+  width: 6.094vw;
+  height: 0.365vw;
+  margin-bottom: 13vw;
+}
+
+.second_paragraph {
+  height: 22.698vw;
+  padding: 3.8vw 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(46, 46, 46, 1) 81%
+  );
+}
+
+.second_paragraph h1 {
+  color: var(--accent-color);
+  font-size: 2.188vw;
+}
+
+.second_paragraph p {
+  color: var(--background-color);
+}
+
+.converterGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4vw 0;
+  justify-items: center;
+}
+
+.rotorBox {
+  width: 18vw;
+  height: 18vw;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(64, 63, 63, 1) 88%
+  );
+  margin-bottom: 0.8vw;
+}
+
+.rotorBox img {
+  width: 17vw;
+  height: auto;
+  margin-inline: auto;
+  padding-top: 1.5vw;
+}
+
+.middle_convert {
+  overflow: hidden;
+  width: 18vw;
+  height: 18vw;
+  position: relative;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(64, 63, 63, 1) 88%
+  );
+  filter: opacity(90%);
+}
+
+.image_wrap_middle {
+  width: 25vw;
+  height: inherit;
+}
+
+#middle_img {
+  padding-top: 3vw;
+  margin-left: -7vw;
+  width: 100%;
+  height: auto;
+}
+
+.middle_convert span {
+  color: var(--accent-color);
+}
+
+.middle_convert h1 {
+  line-height: 2vw;
+  margin-top: -10vw;
+  padding: 1vw;
+  position: absolute;
+  color: var(--background-color) !important;
+  z-index: 1;
+  font-size: 1.5vw;
+}
+
+.footer_banner {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9752275910364145) 41%,
+      rgba(64, 63, 63, 0) 100%
+    ),
+    url("./assets/bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22.698vw;
+  padding-top: 4vw;
+}
+
+.footer_banner h1 {
+  padding-bottom: 2vw;
+  color: var(--accent-color);
+  font-size: 2.188vw;
+}
+
+.footer_banner p {
+  color: var(--background-color);
+}
+
+.greyBar {
+  height: 5vw;
+  width: 100%;
+  background-color: #080808;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .mb_nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 2vw 0;
+    display: block;
+  }
+
+  .mb_nav_wrap ul li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .mb_nav_wrap ul li {
+    list-style-type: none;
+  }
+
+  .list-item-logo {
+    color: var(--background-color);
+    font-family: var(--primary-ff);
+    text-align: center;
+    margin-inline: auto;
+    margin-left: 18vw;
+  }
+
+  .mb_nav_wrap svg {
+    fill: var(--background-color);
+    width: 10vw;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .offerBar {
+    height: 10vw;
+  }
+
+  .offerBar h1 {
+    padding-top: 2vw;
+    font-size: 4vw;
+  }
+
+  .banner {
+    height: 60vw;
+  }
+
+  .banner_img {
+    height: 83vw;
+    margin-left: -10vw;
+    margin-top: -50vw;
+  }
+
+  .banner h1 {
+    font-size: 10vw;
+  }
+
+  .banner h2 {
+    font-size: 7vw;
+  }
+
+  .introduction_paragraph {
+    font-size: 4vw;
+  }
+
+  .specsSection {
+    height: inherit;
+  }
+
+  .grid-title {
+    font-size: 8vw;
+  }
+
+  .myGrid {
+    grid-template-areas:
+      "a c"
+      "b b";
+    gap: 0vw;
+    margin-inline: auto;
+  }
+
+  .orange_underline {
+    width: 35vw;
+    height: 1.5vw;
+  }
+
+  .row-cont h1 {
+    font-size: 7vw;
+  }
+
+  .row-cont h2 {
+    font-size: 5vw;
+  }
+
+  .row1 {
+    grid-area: a;
+  }
+
+  .specs_image {
+    grid-area: b;
+  }
+
+  .specs_image img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .row2 {
+    grid-area: c;
+  }
+
+  .converterGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rotorBox,
+  .middle_convert {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .rotorBox img {
+    width: 38vw;
+    padding-top: 3.5vw;
+  }
+
+  .image_wrap_middle {
+    width: 50vw;
+  }
+
+  #middle_img {
+    margin-left: -12vw;
+    margin-top: 6vw;
+  }
+
+  .middle_convert h1 {
+    font-size: 3vw;
+    line-height: 5vw;
+    margin-top: -24vw;
+  }
+
+  .second_paragraph {
+    height: inherit;
+  }
+
+  .second_paragraph h1,
+  .footer_banner h1 {
+    font-size: 5vw;
+  }
+
+  .footer_banner {
+    height: inherit;
+  }
+}
